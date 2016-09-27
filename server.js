@@ -95,17 +95,10 @@ app.get('/', function (req, res) {
 app.get('/:articleName', function (req, res){
     // articleName= artcle-one
     // articles[artcleName]={} content object of artcle one
-    var ArticleName = req.params.articleName;
+    var articleName = req.params.articleName;
  res.send(createtemplate(articles[articleName]));  
 });
 
-app.get('/article-two', function (req, res){
- res.send("article two requsted");   
-});
-
-app.get('/article-three', function (req, res){
-  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));   
-});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
