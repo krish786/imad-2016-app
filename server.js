@@ -95,7 +95,7 @@ app.get('/', function (req, res) {
 app.get('/:articleName', function (req, res){
     // articleName= artcle-one
     // articles[artcleName]={} content object of artcle one
-    var ArtcleName = req.params.articleName;
+    var ArticleName = req.params.articleName;
  res.send(createtemplate(articles[articleName]));  
 });
 
