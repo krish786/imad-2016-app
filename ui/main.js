@@ -18,7 +18,7 @@ button.onclick =function(){
     };
     //make the request
     
-    request.open('GET','http://krish786.imad.hasura-app.io/counter',true);
+    request.open('GET','http://krish786.imad.hasura-app.io',true);
     reqest.send(null);
     
 };
